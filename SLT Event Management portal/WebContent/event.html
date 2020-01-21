@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Events | Event Management Portal</title>
+	<link rel="stylesheet" type="text/css" href="Styles\styles.css">
+	<link rel="icon" type="image/png" href="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	 <div id="" class="container-fluid">
+		<div class="row h-100">
+			<div id="show_bg_2" class="col-2 sidebar pr-0" >
+				<br><br><br><br><br><br>
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="index.html"><i style="padding-right: 14%;" class="fas fa-home"></i>Home</a>	
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="#calendar"><i style="padding-right: 14%;" class="far fa-calendar-alt"></i>Calendar</a>			
+				<a style="padding-left: 20%; margin-left: 10%;" class="active" href="event.html"><i style="padding-right: 14%;" class="far fa-calendar-check"></i>Events</a>
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="#seats"><i style="padding-right: 14%;" class="fas fa-chair"></i>Seats</a>
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="#location"><i style="padding-right: 14%;" class="fas fa-map-marked-alt"></i></i>Venues</a>
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="#contact"><i style="padding-right: 14%;" class="fas fa-phone"></i>Contact</a>
+				<a style="padding-left: 20%; margin-left: 10%;" class="" href="#news"><i style="padding-right: 14%;" class="far fa-question-circle"></i>Help</a>
+			</div>
+			<div class="col-10">
+				<div style="height: 6%;" class="row shadow w-auto align-items-center px-4 d-flex bd-highlight mb-3 justify-content-end" >
+					<div class="searchbar p-2 bd-highlight shadow-bottom">
+						<input class="search_input align-middle" type="text" name="" placeholder="Search Events">
+						<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+					</div>
+					<a style="font-size: 10px; margin-left: 1%;" class="p-2  bell" href=""><i class="far fa-bell fa-2x"></i></a>
+					<a style="font-size: 10px; margin-left: 1%;" class="p-2  settings" href=""><i class="fas fa-cog fa-2x"></i></a>
+					<a style="font-size: 10px; margin-left: 1%;" class="p-2  power" href=""><i class="fas fa-power-off fa-2x"></i></a>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!--align-items-end-->
+
+	<!-- <nav class="sticky-top shadow navbar navbar-expand-sm bg-light navbar-light">
+		<a style="float:left" class="navbar-brand " href="index.html"><img src="" alt="logo"></a>
+	</nav> -->
+
+	<!-- here's another Bootstrap sidebar example: https://www.codeply.com/go/8ESO56VMns -->
+	<!-- <div class="wrapper container-fluid">
+		<div class="row row-offcanvas row-offcanvas-left">
+			
+			<div class="col-sm-3 col-xs-1 sidebar-offcanvas" id="sidebar">
+				<ul class="nav nav-stacked" id="menu">
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list-alt"></i> <span
+								class="collapse in hidden-xs-down">Link 1</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i> <span
+								class="collapse in hidden-xs-down">Link 2</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-paperclip"></i> <span
+								class="collapse in hidden-xs-down">Saved</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-refresh"></i> <span
+								class="collapse in hidden-xs-down">Refresh</span></a></li>
+					<li class="nav-item" data-toggle="offcanvas-in">
+						<a class="nav-link" href data-target="#item1" data-toggle="collapse"><i class="fa fa-list"></i>
+							<span class="collapse in hidden-xs-down">Menu <span class="caret"></span></span></a>
+						<ul class="nav nav-stacked collapse left-submenu" id="item1">
+							<li class="nav-item"><a class="nav-link" href="">View One</a></li>
+							<li class="nav-item"><a class="nav-link" href="">View Two</a></li>
+						</ul>
+					</li>
+					<li class="nav-item" data-toggle="offcanvas-in">
+						<a class="nav-link" href data-target="#item2" data-toggle="collapse"><i class="fa fa-list"></i>
+							<span class="collapse in hidden-xs-down">Menu <span class="caret"></span></span></a>
+						<ul class="nav nav-stacked collapse" id="item2">
+							<li class="nav-item"><a class="nav-link" href="#">View One</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">View Two</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">View Three</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span
+								class="collapse in hidden-xs-down">Link</span></a></li>
+				</ul>
+			</div>
+			
+
+			 main right col 
+			<div class="col-sm-9 col-xs-11" id="main">
+				<a href="#" data-toggle="offcanvas"><i class="fa fa-navicon fa-lg"></i></a>
+				<hr>
+				<h3>Bootstrap 4 Responsive Sidebar Example</h3>
+				<p>
+					Page content here...
+				</p>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card card-block">Card</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card card-block">Card</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card card-block">Card</div>
+					</div>
+				</div>
+			</div>
+			 /main 
+		</div> 
+	</div> -->
+	<!-- <script>
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+			$('span.collapse').toggleClass('');
+		});
+
+		$('[data-toggle=offcanvas-in]').click(function () {
+			$('.row-offcanvas').addClass('active');
+			$('span.collapse').addClass('in');
+		});
+	</script> -->
+
+</body>
+
+</html>
