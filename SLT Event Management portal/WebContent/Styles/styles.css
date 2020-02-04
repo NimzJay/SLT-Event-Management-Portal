@@ -19,8 +19,7 @@
 }
 
 #show_bg_2 {
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #023f77
-		360px), url('Pix/e.jpg'); *****
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #023f77 360px), url('ee.jpg');
 	background-size: cover;
 }
 
@@ -72,11 +71,14 @@ html, body {
 }
 
 /* Links on mouse-over */
-.sidebar a:hover:not (.active ) {
+.sidebar a:hover :not(.active) {
 	background-color: RGB(255, 255, 255, 50%);
 	color: black;
+	display: block;
 	text-decoration: none;
 }
+
+
 
 a i {
 	vertical-align: left;
