@@ -1,9 +1,5 @@
 #grad1 {
-	background: #4d13ab; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #c8f4fa, #38b6ff, #4d13ab);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #c8f4fa, #38b6ff, #4d13ab);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #240b36;
 }
 
 #grad2 {
@@ -23,8 +19,7 @@
 }
 
 #show_bg_2 {
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #023f77
-		360px), url('ee.jpg');
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #023f77 360px), url('ee.jpg');
 	background-size: cover;
 }
 
@@ -44,10 +39,6 @@ html, body {
 #collapsibleNavbar {
 	border-bottom-left-radius: 40px;
 	border-bottom-right-radius: 40px;
-}
-
-.navbar-trans {
-	background: transparent; 
 }
 
 .container-fluid {
@@ -80,12 +71,14 @@ html, body {
 }
 
 /* Links on mouse-over */
-.sidebar a:hover :not (.active ) {
+.sidebar a:hover :not(.active) {
 	background-color: RGB(255, 255, 255, 50%);
 	color: black;
 	display: block;
 	text-decoration: none;
 }
+
+
 
 a i {
 	vertical-align: left;
@@ -144,43 +137,4 @@ a i {
 
 .power, .bell, .settings {
 	color: rgb(148, 35, 101);
-}
-
-div.signin {
-	border-radius: 8%;
-	margin-left: auto;
-	margin-top: 9%;
-	margin-bottom: 17%;
-}
-
-div.signup {
-	border-radius: 6%;
-	margin-left: auto;
-	margin-top: 1%;
-	margin-bottom: 4%;
-}
-
-div.medias a {
-	text-decoration: none;
-	color: #0d022b;
-}
-
-a.fb-ic i:hover {
-	color: #035ed4;
-}
-
-a.tw-ic i:hover {
-	color: #48c5ff;
-}
-
-a.gplus-ic i:hover {
-	color: #ff0000;
-}
-
-a.li-ic i:hover {
-	color: #004080;
-}
-
-a.yt-ic i:hover {
-	color: #ff0000;
 }
