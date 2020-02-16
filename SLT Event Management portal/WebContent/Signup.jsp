@@ -47,17 +47,17 @@
 				<li class="nav-item"><a class="nav-link" href="index.html"><i
 						class="fas fa-home pr-2"></i>Home &nbsp;</a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i
+					class="fas fa-images pr-2"></i>Gallery &nbsp;</a></li>
+			<li class="nav-item"><a class="nav-link" href="#"><i
 						class="fas fa-calendar-alt pr-2"></i>Calendar &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="event.html"><i
+				<li class="nav-item"><a class="nav-link" href="Events.html"><i
 						class="fas fa-calendar-check pr-2"></i>Events &nbsp;</a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i
 						class="fas fa-chair pr-2"></i>Seats &nbsp;</a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i
 						class="fas fa-map-marked-alt pr-2"></i>Venues &nbsp;</a></li>
 				<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-phone pr-2"></i>Contact &nbsp; </a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-question-circle pr-2"></i>Help &nbsp; </a></li>
+						class="fas fa-phone pr-2"></i>Contact Us&nbsp; </a></li>
 				<li class="nav-item active">&nbsp; &nbsp;<a
 					class="btn btn-transparent text-secondary bg-transparent"
 					href="Signin.jsp"><i class="fas fa-power-off"></i> Sign
@@ -74,7 +74,7 @@
 			<h4 class="display-4">Sign Up</h4>
 			<h5 class="display-5"
 				style="color: rgb(158, 157, 157); letter-spacing: 2px; font-family: Calibri;">Please&nbsp;Enter&nbsp;your&nbsp;Details!</h5>
-			<br>
+			
 			<!-- Login Form -->
 			<form id="register" action="register" method="POST">
 				<div class="form-row">
@@ -120,12 +120,19 @@
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-12">
+						<label for="inputAddress">NIC</label> <input type="text"
+							class="form-control" id="nic"
+							placeholder="987654321V" name="nic">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-12">
 						<label for="inputAddress">Phone</label> <input type="text"
 							class="form-control" id="inputPhone" name="phone"
 							placeholder="0777123456">
 					</div>
 				</div>
-				<br>
+				
 				<div class="form-row">
 					<div class="form-group col-md-6">
 						<input type="submit" class="btn btn-primary btn-block"
@@ -139,7 +146,7 @@
 					<p>
 						Already a Member? &nbsp;<a href="Signin.jsp">Sign In</a>
 					</p>
-					<br>
+					
 				</div>
 			</form>
 		</div>
