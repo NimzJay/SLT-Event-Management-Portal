@@ -1,26 +1,50 @@
-package utility;
+package dbCon;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 /**
- * Servlet implementation class Login
+ * Servlet implementation class DBconnection
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/DBconnection")
+public class DBconnection extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login() {
+    public DBconnection() {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+    
+    
+    public static Connection getconn() {
+		// TODO Auto-generated method stub
+		Connection con=null;
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/slt_emp", "root", "");
+			
+			return con;
+			
+		}
+		catch(Exception ex) {
+		System.out.println("error " +ex);
+		}
+		return null;	
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)

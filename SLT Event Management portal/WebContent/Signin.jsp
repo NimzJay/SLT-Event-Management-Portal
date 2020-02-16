@@ -76,7 +76,7 @@
 				style="color: rgb(158, 157, 157); letter-spacing: 2px; font-family: Calibri;">Please&nbsp;Sign-in&nbsp;to&nbsp;your&nbsp;Account!</h5>
 			<br>
 			<!-- Login Form -->
-			<form id="login" method="post" action="login">
+			<form id="login" method="post" action="Login">
 				<div class="form-row">
 					<div class="form-group col-md-12">
 						<label for="inputEmail4">Username</label> <input type="text"

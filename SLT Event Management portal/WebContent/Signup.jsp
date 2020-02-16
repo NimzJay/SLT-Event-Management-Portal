@@ -76,7 +76,7 @@
 				style="color: rgb(158, 157, 157); letter-spacing: 2px; font-family: Calibri;">Please&nbsp;Enter&nbsp;your&nbsp;Details!</h5>
 			
 			<!-- Login Form -->
-			<form id="register" action="register" method="POST">
+			<form id="register" action="Register" method="POST">
 				<div class="form-row">
 					<div class="col">
 						<label for="inputEmail4">Name</label>
