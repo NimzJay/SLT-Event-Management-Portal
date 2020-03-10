@@ -1,0 +1,113 @@
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+  }
+  
+  
+  .navbar-default {
+    
+     .navbar-brand {
+       margin-top: 10px;
+       color: white;
+          
+        &:hover {
+           color: #C57ED3;
+           border: 1px solid #C57ED3;
+        } 
+     }
+     
+    .navbar-nav li a {
+          color: white;
+          margin: 10px 5px 5px 5px;
+          
+    }
+    .navbar-nav a:hover{
+      color: #C57ED3;
+      border: 1px solid #C57ED3;
+    }
+.navbar-nav a:visited {
+  color: #C57ED3;
+  text-decoration: none;
+}
+  
+      } //end li
+  
+      .navbar-nav .active {
+  
+         a, > a:hover, > a:focus {
+          background-color: transparent;
+          color: #C57ED3;
+        }
+  
+      }
+  
+    } //end .navbar-nav
+  
+    .navbar-toggle {
+      border-color: #C57ED3;
+    }
+      .navbar-toggle :hover {
+          background-color: #490D40;
+        }
+  
+  
+  
+        .icon-bar {
+          color: #C57ED3;
+          background-color: #C57ED3;
+  
+        }
+  
+    .navbar-collapse.collapse.in ul {
+      background-color: #490D40;
+    }
+  
+  
+  
+  /* Solid class attached on scroll past first section */
+  
+  .navbar.solid {
+    background-color: #490D40;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+  
+      .navbar-brand {
+        color: #C57ED3;
+        transition: color 1s ease 0s;
+      }
+  
+      .navbar-nav {
+  
+         > li {
+  
+            > a {
+              color: #C57ED3;
+              transition: color 1s ease 0s;
+            }
+  
+         } //end li
+  
+      } //end .navbar-nav
+  
+  }
+  
+  .about {
+     background-color: #C57ED3;
+     color: #490D40;
+     height: 600px;
+     text-align: center;
+     margin-top: -20px;
+     
+     h2 {
+        padding-top: 220px;
+     }
+     p {
+        padding: 20px 80px;
+     }
+  }
+  
+  

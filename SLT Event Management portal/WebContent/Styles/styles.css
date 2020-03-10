@@ -23,8 +23,8 @@
 }
 
 #show_bg_2 {
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #023f77
-		360px), url('ee.jpg');
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #012c6d
+		650px), url('ee.jpg');
 	background-size: cover;
 }
 
@@ -46,21 +46,76 @@ html, body {
 	border-bottom-right-radius: 40px;
 }
 
-.navbar-trans {
-	background: transparent; 
+/*.navbar {
+	height: 65px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	z-index: 1;
+}
+  
+.navbar-brand {
+	color: white;	
+}
+.navbar-brand:hover {
+	color: white;	
+}
+	
+.navbar-nav li a {
+	color: white;
+}
+.navbar-nav a:hover {
+	color: #a0a0a0;
+}
+ 
+.navbar-nav a:active {
+	background-color: transparent;
+	color: white;
+} */
+
+/* .navbar-nav li a.btsi{
+	color: rgb(170, 173, 175);
 }
 
-.container-fluid {
-	height: 100%;
+.navbar-nav li a.btsi:hover{
+	color: rgb(223, 223, 223);
+} */
+
+.carousel {
+	height:60vh;
+	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	background-position: center;
+}
+
+.carousel-item img{
+	object-fit:cover;
+	height:60vh !important;
+}
+
+#btnsi{
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+#btnsi:hover{
+	-webkit-transform: scale(1.1);
+	background-color: #da8208;
+}
+
+#btnav{
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+#btnav:hover{
+	-webkit-transform: scale(1.1);	
 }
 
 /* The side navigation menu */
 .sidebar {
-	background-color: white;
+	background-color: #0d022b;
 	position: fixed;
 	height: 100%;
 	overflow: auto;
-	border-top-right-radius: 25px;
 }
 
 /* Sidebar links */
