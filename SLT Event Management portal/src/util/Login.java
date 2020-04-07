@@ -86,11 +86,11 @@ public class Login extends HttpServlet {
         
         	String userValidate = dao.check(user,pass);
         	if(userValidate.equals("clientUI")) 
-        	{
+        	{        		
         		System.out.println("Member");
         		Session.setUser(user);
         		System.out.println(Session.getUser());
-        		request.getRequestDispatcher("Events.html").forward(request, response);   		           
+        		request.getRequestDispatcher("Events.jsp").forward(request, response);   		           
            	}
         	else if(userValidate.equals("adminUI"))
         	{

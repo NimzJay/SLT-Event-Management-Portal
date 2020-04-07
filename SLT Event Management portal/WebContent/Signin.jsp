@@ -41,26 +41,20 @@
 			data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar"
-			style="text-align: center;">
+		<div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align: center;">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="index.html"><i
-						class="fas fa-home pr-2"></i>Home &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i
-					class="fas fa-images pr-2"></i>Gallery &nbsp;</a></li>
-			<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-calendar-alt pr-2"></i>Calendar &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="Events.html"><i
-						class="fas fa-calendar-check pr-2"></i>Events &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-chair pr-2"></i>Seats &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-map-marked-alt pr-2"></i>Venues &nbsp;</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i
-						class="fas fa-phone pr-2"></i>Contact Us&nbsp; </a></li>
-				<li class="nav-item active">&nbsp; &nbsp;<a
-					class="btn btn-transparent text-secondary bg-transparent"
-					href="Signup.jsp"><i class="fas fa-power-off"></i> Sign Up </a>&nbsp;
+				<li class="nav-item active pr-3"><a id="btnav" class="nav-link" href="index.html"><i
+							class="fas fa-home pr-2"></i>Home &nbsp;</a></li> 
+				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="#"><i class="fas fa-images pr-2"></i>Gallery
+						&nbsp;</a></li>
+				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="#"><i class="fas fa-calendar-alt pr-2"></i>Calendar
+						&nbsp;</a></li>
+				<li class="nav-item pr-2"><a id="btnav" class="nav-link" href="Events.jsp"><i
+							class="fas fa-calendar-check pr-2"></i>Events &nbsp;</a></li>
+				<li class="nav-item"><a id="btnav" class="nav-link" href="#"><i class="fas fa-phone pr-2"></i>Contact Us&nbsp; </a>
+				</li>
+				<li class="nav-item">&nbsp; &nbsp;<a id="btnav" class="btn btsi text-secondary btn-transparent bg-transparent"
+						href="Signup.jsp"><i class="fas fa-power-off"></i> Sign Up </a>&nbsp;
 					&nbsp;
 				</li>
 			</ul>

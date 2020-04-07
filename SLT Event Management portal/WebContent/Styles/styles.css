@@ -46,41 +46,6 @@ html, body {
 	border-bottom-right-radius: 40px;
 }
 
-/*.navbar {
-	height: 65px;
-	background-color: transparent;
-	border: none;
-	color: white;
-	z-index: 1;
-}
-  
-.navbar-brand {
-	color: white;	
-}
-.navbar-brand:hover {
-	color: white;	
-}
-	
-.navbar-nav li a {
-	color: white;
-}
-.navbar-nav a:hover {
-	color: #a0a0a0;
-}
- 
-.navbar-nav a:active {
-	background-color: transparent;
-	color: white;
-} */
-
-/* .navbar-nav li a.btsi{
-	color: rgb(170, 173, 175);
-}
-
-.navbar-nav li a.btsi:hover{
-	color: rgb(223, 223, 223);
-} */
-
 .carousel {
 	height:60vh;
 	background-repeat: no-repeat;
@@ -118,28 +83,104 @@ html, body {
 	overflow: auto;
 }
 
+#brand{
+	text-decoration: none;
+	-webkit-transform: none;
+}
+
 /* Sidebar links */
 .sidebar a {
 	display: block;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-	color: white;
-	padding: 16px 0px 16px 0px;
+	/* border-top-left-radius: 25px; */
+	/* border-bottom-left-radius: 25px; */
+	color: rgb(218, 218, 218);
+	padding: 10% 0px 10% 10%;
+	/* border: 50%;
+	border-color: white; */
+	margin-left: 5%;
 	text-decoration: none;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.2s ease-in-out;
 }
 
 /* Active/current link */
 .sidebar a.active {
-	background-color: white;
-	color: black;
+	/* background-color: rgba(255, 255, 255, 0.164); */
+	color: white;
+	border-left: 10px;
+	border-left-color: white;
 }
 
 /* Links on mouse-over */
-.sidebar a:hover :not (.active ) {
-	background-color: RGB(255, 255, 255, 50%);
-	color: black;
+.sidebar a:hover{
+	/* background-color: RGB(255, 255, 255, 50%); */
+	color: white;
 	display: block;
 	text-decoration: none;
+	-webkit-transform: scale(1.1);	
+}
+
+.event{
+	background-color: rgb(245, 245, 245);
+	z-index: 1; 
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	/* border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px; */
+}
+
+/* Active */
+.nav-pills .pill-1 .nav-link.active {
+	background-color: rgb(13, 8, 66);
+	color: white;
+
+	border-radius: 40%;
+
+}
+
+.nav-pills .pill-2 .nav-link.active {
+	background-color: rgb(13, 8, 66);
+	color: white;	
+	border-radius: 20%;
+}
+
+.nav-pills .pill-3 .nav-link.active {
+    background-color: rgb(13, 8, 66);
+	color: white;
+	border-radius: 20%;
+}
+
+.nav-pills .pill-4 .nav-link.active{
+    background-color: rgb(13, 8, 66);
+	color: white;
+	border-radius: 20%;
+}
+
+/* Not active (faded) */
+.nav-pills .pill-1 .nav-link {
+    background-color: white;
+	color: #9b9997;
+}
+
+.nav-pills .pill-2 .nav-link {
+	background-color: white;
+	color: #9b9997;
+}
+
+.nav-pills .pill-3 .nav-link {
+    background-color: white;
+    color: #9b9997;
+}
+
+.nav-pills .pill-4 .nav-link {
+    background-color: white;
+    color: #9b9997;
+}
+
+div.tool[title]{
+	color: black;
+	display: block;
+	border-radius: 20%;
 }
 
 a i {
@@ -147,11 +188,24 @@ a i {
 }
 
 @media ( max-width :800px) {
+	.sidebar {
+		overflow-x: hidden;
+		overflow-y: hidden;
+    	width: 10%;
+	}
+	
 	.sidebar a {
 		font-size: 0px !important;
+		padding: 40% 0px 0% 10%;
 	}
 	.sidebar a i {
-		font-size: 20px !important;
+		font-size: 17px !important;
+		padding: 20% 0px 15% 10%;
+	}
+	.sidebar img{
+		margin-top:50%;
+		margin-left: -40%;
+		margin-bottom: 10%;
 	}
 }
 
@@ -173,16 +227,21 @@ a i {
 	caret-color: transparent;
 	transition: width 0.3s linear;
 }
+/* 
+.searchbar:hover{
+	background-color: rgb(235, 235, 235);
+} */
 
 .searchbar:hover>.search_input {
 	padding: 0 10px;
-	width: 250px;
+	width: 200px;
 	caret-color: rgb(148, 35, 101);
 	transition: width 0.3s linear;
 }
 
 .searchbar:hover>.search_icon {
 	text-decoration: none;
+	background-color: white;
 }
 
 .search_icon {
