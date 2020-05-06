@@ -90,7 +90,7 @@ public class Login extends HttpServlet {
         		System.out.println("Member");
         		Session.setUser(user);
         		System.out.println(Session.getUser());
-        		request.getRequestDispatcher("Events.jsp").forward(request, response);   		           
+        		request.getRequestDispatcher("EventsUpcoming.jsp").forward(request, response);   		           
            	}
         	else if(userValidate.equals("adminUI"))
         	{

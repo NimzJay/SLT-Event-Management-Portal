@@ -32,9 +32,9 @@
 <body>
 	<!-- Navigation Bar -->
 	<nav class="navbar navbar-expand-xl bg-transparent navbar-light">
-		<a class="navbar-brand" href="index.html"> <img
-			src="Pix\favicon.png" width="40px" height="40px"
-			class="d-inline-block" alt="LOGO"> | <span> SLT Event
+		<a class="navbar-brand" href="index.html"> <img src="Pix\favicon.png" width="40px" height="40px"
+				class="d-inline-block" alt="LOGO"> | <span
+				style="font-size: 20pt; font-family:Calibri Light; font-style:italic; letter-spacing: 2px;;">SLT Event
 				Management Portal</span>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -43,17 +43,17 @@
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align: center;">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active pr-3"><a id="btnav" class="nav-link" href="index.html"><i
-							class="fas fa-home pr-2"></i>Home &nbsp;</a></li> 
+				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="index.html"><i
+							class="fas fa-home pr-2"></i>Home &nbsp;</a></li>
+				<li class="nav-item pr-2"><a id="btnav" class="nav-link" href="EventsUpcoming.jsp"><i
+							class="fas fa-calendar-check pr-2"></i>Events &nbsp;</a></li> 
+				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="Calendar.jsp"><i class="fas fa-calendar-alt pr-2"></i>Calendar
+						&nbsp;</a></li>
 				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="#"><i class="fas fa-images pr-2"></i>Gallery
-						&nbsp;</a></li>
-				<li class="nav-item pr-3"><a id="btnav" class="nav-link" href="#"><i class="fas fa-calendar-alt pr-2"></i>Calendar
-						&nbsp;</a></li>
-				<li class="nav-item pr-2"><a id="btnav" class="nav-link" href="Events.jsp"><i
-							class="fas fa-calendar-check pr-2"></i>Events &nbsp;</a></li>
+						&nbsp;</a></li>	
 				<li class="nav-item"><a id="btnav" class="nav-link" href="#"><i class="fas fa-phone pr-2"></i>Contact Us&nbsp; </a>
 				</li>
-				<li class="nav-item">&nbsp; &nbsp;<a id="btnav" class="btn btsi text-secondary btn-transparent bg-transparent"
+				<li class="nav-item active">&nbsp; &nbsp;<a id="btnav" class="btn btsi text-secondary btn-transparent bg-transparent"
 						href="Signin.jsp"><i class="fas fa-power-off"></i> Sign in </a>&nbsp;
 					&nbsp;
 				</li>
