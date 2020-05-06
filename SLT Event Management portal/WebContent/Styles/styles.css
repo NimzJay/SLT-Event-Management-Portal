@@ -1,9 +1,7 @@
 #grad1 {
-	background: #4d13ab; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #c8f4fa, #38b6ff, #4d13ab);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #c8f4fa, #38b6ff, #4d13ab);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.05), white
+		650px);
+	background-size: cover;
 }
 
 #grad2 {
@@ -22,6 +20,7 @@
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
 #show_bg_2 {
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #012c6d
 		650px), url('ee.jpg');
@@ -33,6 +32,7 @@ html, body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	font-family: Calibri Light;
 }
 
 * {
@@ -260,6 +260,10 @@ a i {
 	color: rgb(148, 35, 101);
 }
 
+.settings:hover, .power:hover, .bell:hover{
+	color: #035ed4;
+}
+
 div.signin {
 	border-radius: 8%;
 	margin-left: auto;
@@ -298,3 +302,78 @@ a.li-ic i:hover {
 a.yt-ic i:hover {
 	color: #ff0000;
 }
+
+a.navlinks {
+	background-color: white;
+	color: #606060;
+	text-decoration: none;
+	border-radius: 15px;
+	padding-left:3%;
+	
+}
+
+a.navlinks:hover {
+	background-color: #e9e9e9;
+	color: #606060;
+	text-decoration: none;
+
+}
+
+a.navlinks.active {
+	background-color: #e9e9e9;
+	color: #606060;
+	text-decoration: none;
+
+}
+
+
+div.cont {
+	border-radius: 10px; 
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: Calibri Light; 
+	color:white; 
+	letter-spacing: 1px;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	
+}
+
+div.cont:hover {
+	-webkit-transform: scale(1.1);
+}
+
+div.cont p {
+	font-size:13px;
+	margin-top:-5%;
+}
+
+div.week {
+	background-color:white;
+	border-radius: 15px;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+div.week:hover {
+	background-color:#f4f4f4;
+	-webkit-transform: scale(1.1);
+}
+
+div.week a {
+	text-decoration:none;
+	color:#696969;
+	font-size: 15px;
+}
+
+span.week {
+	color: #afafaf;
+	font-size: 12px;
+	
+}
+
+
+
+
+
+
+
