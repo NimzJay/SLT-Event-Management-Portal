@@ -257,8 +257,7 @@
 							<span class="week">S</span>
 						</div>
 						
-						<script>
-						
+						<script>			
 							var dd = "<%=dd%>"
 							//alert(typeof dd + dd);
 							var mon = "MONDAY"
