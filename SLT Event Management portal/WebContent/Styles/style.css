@@ -1,0 +1,87 @@
+
+@charset "ISO-8859-1";
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	backgrount: no-repeat;
+	~webkit-background-size: cover; 
+	font-family: "calibri",Tahoma,sans-serif;
+}
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    box-sizing:border-box;
+    background: rgba(0,0,0,0.2);
+    padding: 40px;
+}
+h2{
+	margin:0;
+	padding: 20 20 20px;
+	font-weight: bold;
+	color: #ffffff;	
+}
+.login p{
+	margin:0;
+	padding: 0;
+	font-weight: bold;
+	color: #ffffff;	
+}
+.login input,select{
+	margin-bottom: 40px;
+	width: 100%;
+}
+.login input[type=text],.login input[type=password]{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	outline: none;
+	height:40px;
+	color: #ffffff;
+	display: 16px;
+}
+::placeholder{
+	color: #ffffff;
+}
+.login select {
+	margin-top: 20px;
+	padding: 10px 0;
+}
+.login input[type=submit]{
+	border:none;
+	height:40px;
+	outline: none;
+	color: #ffffff;
+	font-size: 15px;
+	background-color: coral;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.login input[type=submit]:hover{
+	color: #ffffff;
+	background-color: #00b9b9;
+}
+.login a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

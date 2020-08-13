@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+@import url ("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,700,400,600");
+
+a.button {
+  background-color: #1EC3C8;
+  border-radius:3px;;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a.button:hover {
+	color: #ffffff;
+	background-color: #1BADB2;
+}
+
+body{
+	font-family: 'Calibri';	
+}
+h2{
+	margin:0;
+	padding: 20 20 20px;
+	font-weight: bold;	
+}
+
+	
+	
+	
+	
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background: no-repeat;
+	~webkit-background-size: cover; 
+	font-family: "calibri",Tahoma,sans-serif;
+}
+
+/* .button3 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+	 */
+	
+	
+	
+    

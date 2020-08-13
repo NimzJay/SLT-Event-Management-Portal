@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+@import url ("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,700,400,600");
+
+
+a.main_button{
+	width: 20%;
+	float: right;
+	margin: 2px;
+	text-align:center;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 13px;
+	font-size: 1.0em;
+	background-color: #1EC3C8;
+	border-radius: 3px;
+}
+a.main_button:hover{
+	background-color: #1BADB2;
+	color:#fff;
+}
+
+a.sub_button{
+	margin: 2px;
+	text-align:center;
+	text-decoration: none;
+	padding: 5px;
+    background-color: #DDE1E7;
+    color: dimgray;
+    border: none;
+    border-radius: 3px;	
+    margin-top: 10px;
+	
+}
+a.sub_button:hover{
+	background-color: #CED4DC;
+}
+
+div.forms{
+	align: center;
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+
+/* div.forms input[type=submit], input[type=reset]{
+    display: block;
+    padding: 10px;
+    background-color: #DDE1E7;
+    color: dimgray;
+    border: none;
+    border-radius: 3px;	
+    margin-top: 10px;
+}
+
+div.forms input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #CED4DC;
+}
+
+table.tab td{
+	padding: 5px;
+}
+
+div.forms input[type=text], input[type=date] {
+    width: 500px;
+    border: 1px solid red;
+    border-color: lightgray;
+    padding: 5px;
+    border-radius: 3px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,9 +3,11 @@ A web application which is a new self contained product which allows the user to
 
 IDE: Eclipse 2019
 
-Java: v13.0.2
+Java Version: v1.8
 
-Tomcat: v9
+Tomcat Version: 9.0.14
+
+XAMPP Version: 7.3.12
 
 Database: MySQL
 
