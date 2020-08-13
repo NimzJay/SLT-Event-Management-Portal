@@ -39,7 +39,7 @@ public class Logout extends HttpServlet {
 	
 		request.getSession().invalidate();
 		//response.sendRedirect("index.html");
-		request.getRequestDispatcher("index.html").forward(request, response);
+		request.getRequestDispatcher("Signin.jsp").forward(request, response);
 		Session.user = null;
 		System.out.println("Logout session un: " + Session.user);
 		
@@ -54,7 +54,7 @@ public class Logout extends HttpServlet {
 		
 		request.getSession().invalidate();
 		//response.sendRedirect("index.html");
-		request.getRequestDispatcher("index.html").forward(request, response);
+		request.getRequestDispatcher("Signin.jsp").forward(request, response);
 		Session.user = null;
 		System.out.println("Logout session un: " + Session.user);
 		

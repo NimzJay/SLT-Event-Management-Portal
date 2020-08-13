@@ -35,7 +35,7 @@ public class DBconnection extends HttpServlet {
 			
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/slt_emp", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/slt_emp?useTimezone=true&serverTimezone=UTC", "root", "");
 			
 			return con;
 			

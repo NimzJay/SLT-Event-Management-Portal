@@ -46,7 +46,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #0d022b;">
 	<%
 		try {
 		
@@ -98,10 +98,6 @@
 						style="padding-right: 14%;" class="far fa-calendar-check"></i>Events</a>
 				</div>
 				<div>
-					<a href="Calendar.jsp" title="Calendar"><i
-						style="padding-right: 14%;" class="far fa-calendar-alt"></i>Calendar</a>
-				</div>
-				<div>
 					<a href="#gallery" title="Gallery"><i
 						style="padding-right: 14%;" class="fas fa-images"></i>Gallery</a>
 				</div>
@@ -133,17 +129,18 @@
 
 				<div class="px-5 ">
 					<h2 class="mb-3" style="font-family: Calibri Light;">Upcoming
-						Events</h2><br>
-					<div class="row">
-						<div class="col-1">
+						Events</h2>
+					<br>
+					<div class="row no-gutters">
+						<div class="col-12">
 							<a href="EventsAll.jsp"
-								class="navlinks text-center mr-5 py-1 px-3">All</a> </div>
-						<div class="col-2">
+								class="navlinks text-center mx-auto py-1 px-3 my-2">All</a> 
+						
 							<a href="EventsUpcoming.jsp"
-								class="navlinks active text-center mx-1 py-1 px-3">Upcoming</a> </div>
-						<div class="col-2">
+								class="navlinks active text-center mx-auto py-1 px-3 my-2">Upcoming</a>
+						
 							<a href="EventsCompleted.jsp"
-								class="navlinks text-center mx-1 py-1 px-3">Completed</a>
+								class="navlinks text-center mx-auto py-1 px-3 my-2">Completed</a>
 						</div>
 					</div>
 					<br>
@@ -162,19 +159,28 @@
 						<script>
 								
 							var innerDiv = document.createElement('div');
-							innerDiv.classList.add("cont","shadow","col","py-2","my-2","pt-3","pl-4");
+							innerDiv.classList.add("cont","shadow","col-lg-3","col-md-10","py-2","my-2","pt-3","mr-3","pl-4");
 							innerDiv.style.backgroundColor = "<%=color[i]%>";
 							innerDiv.id = "grad1"
+							innerDiv.style.cursor = "pointer";
 													
 							document.getElementById("events").appendChild(innerDiv);
 							
 							innerDiv.innerHTML = 
-								'<h4 style="margin-bottom:-1%;"><%=rs.getString("eName")%></h1><br>'
+								'<h4 id="ename" style="margin-bottom:-1%;"><%=rs.getString("eName")%></h1><br>'
 								+'<p><i style="padding-right: 4%;" class="far fa-calendar-alt"></i><%=day%>&nbsp;<%=monthName%>&nbsp;<%=year%></P>'
 								+'<p><i style="padding-right: 4%;" class="fas fa-map-marker-alt"></i><%=rs.getString("eVenue")%></p>'
 								+''
 								+''
 								+'';
+								
+							innerDiv.onclick= function(){
+								var eid = <%=rs.getString("eid")%>								
+								alert(eid);
+								
+								location.href = "Seats.jsp";					    
+							}
+							
 						</script>
 
 						<% i += 1; } %>
@@ -208,44 +214,6 @@
 
 						<p class="col-12"><%=today.getMonth()%>&nbsp;&nbsp;<%=today.getYear()%></p>
 						<br>
-						<script>
-						
-						var dd = '<%=dd%>';
-													
-							if (dd == "MONDAY") {
-								document.getElementById("mon").style.backgroundColor = "#f8bc07"
-								document.getElementById("mon").style.color = "white"
-								
-							} else if (dd == "TUESDAY") {
-								document.getElementById("tue").style.backgroundColor = "#f8bc07"
-								document.getElementById("tue").style.color = "white"
-							
-							} else if (dd == 'WEDNESDAY') {
-								document.getElementById("wed").style.backgroundColor = "#f8bc07"
-								document.getElementById("wed").style.color = "white"
-							
-							} else if (dd == "THURSDAY") {
-								document.getElementById("thu").style.backgroundColor = "#f8bc07"
-								document.getElementById("thu").style.color = "white"
-							
-							} else if (dd == "FRIDAY") {
-								document.getElementById("fri").style.backgroundColor = "#f8bc07"
-								document.getElementById("fri").style.color = "white"
-							
-							} else if (dd == "SATURDAY") {
-								document.getElementById("sat").style.backgroundColor = "#f8bc07"
-								document.getElementById("sat").style.color = "white"
-							
-							} else if (dd == "SUNDAY") {
-								document.getElementById("sun").style.backgroundColor = "#f8bc07"
-								document.getElementById("sun").style.color = "white"
-							
-							} else {
-
-							
-							}
-						
-						</script>
 												
 						<div id="mon"  class="col-2 week mx-auto text-center shadow m-2 py-2"
 							style="width: 11%; flex: 0 0 11%; max-width: 11%;">
@@ -288,12 +256,59 @@
 							<a href="#" title="Sunday" data-value="7"><%=days[6]%></a><br>
 							<span class="week">S</span>
 						</div>
+						
+						<script>
+						
+							var dd = "<%=dd%>"
+							//alert(typeof dd + dd);
+							var mon = "MONDAY"
+							var tue = "TUESDAY"
+							var wed = "WEDNESDAY"
+							var thu = "THURSDAY"
+							var fri = "FRIDAY"
+							var sat = "SATURDAY"
+							var sun = "SUNDAY"
+													
+							if (dd.equals(mon) == true) {
+								document.getElementById("mon").style.backgroundColor = "#f8bc07";
+								document.getElementById("mon").style.color = "white";
+								
+							} else if (dd.equals(tue) == true) {
+								document.getElementById("tue").style.backgroundColor = "#f8bc07";
+								document.getElementById("tue").style.color = "white";
+							
+							} else if (dd.equals(wed) == true) {
+								document.getElementById("wed").style.backgroundColor = "#f8bc07";
+								document.getElementById("wed").style.color = "white";
+							
+							} else if (dd.equals(thu) == true) {
+								document.getElementById("thu").style.backgroundColor = "coral";
+								document.getElementById("thu").style.color = "white";
+							
+							} else if (dd.equals(fri) == true) {
+								document.getElementById("fri").style.backgroundColor = "#f8bc07";
+								document.getElementById("fri").style.color = "white";
+							
+							} else if (dd.equals(sat) == true) {
+								document.getElementById("sat").style.backgroundColor = "#f8bc07";
+								document.getElementById("sat").style.color = "white";
+							
+							} else if (dd.equals(sun) == true) {
+								document.getElementById("sun").style.backgroundColor = "#f8bc07";
+								document.getElementById("sun").style.color = "white";
+							
+							} else {
+
+							
+							}
+						
+						</script>
 
 					</div>
 					<div class="row" style="height: 100%;">
 						<div style="padding-top: 15%;"
 							class="col-12 no-gutters align-self-end">
-							<img src="Pix/sss.png"
+							<img src="Pix/tm.png"
 								style="height: 100%; width: 100%; background-size: cover;">
 						</div>
 					</div>

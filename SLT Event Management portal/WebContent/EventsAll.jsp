@@ -46,7 +46,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #0d022b;">
 	<%
 		try {
 		
@@ -84,7 +84,7 @@
 	<div id="" class="container-fluid" style="background-color: #0d022b;">
 		<div class="row vh-100">
 
-			<div id="" class="col-2 sidebar pr-0">
+			<div id="" class="col-2 sidebar pr-0 ">
 				<div style="padding: 20% 3% 10% 20%;" class="">
 					<a id="brand" href="index.html"><img src="Pix\favicon.png"
 						width="50px" height="50px" alt="LOGO"></a><br>
@@ -96,10 +96,6 @@
 				<div>
 					<a class="active" href="EventsUpcoming.jsp" title="Events"><i
 						style="padding-right: 14%;" class="far fa-calendar-check"></i>Events</a>
-				</div>
-				<div>
-					<a href="Calendar.jsp" title="Calendar"><i
-						style="padding-right: 14%;" class="far fa-calendar-alt"></i>Calendar</a>
 				</div>
 				<div>
 					<a href="#gallery" title="Gallery"><i
@@ -134,16 +130,16 @@
 				<div class="px-5 ">
 					<h2 class="mb-3" style="font-family: Calibri Light;">All
 						Events</h2><br>
-					<div class="row">
-						<div class="col-1">
+					<div class="row no-gutters">
+						<div class="col-12">
 							<a href="EventsAll.jsp"
-								class="navlinks active text-center mr-5 py-1 px-3">All</a> </div>
-						<div class="col-2">
+								class="navlinks active text-center mx-auto py-1 px-3 my-2">All</a> 
+						
 							<a href="EventsUpcoming.jsp"
-								class="navlinks text-center mx-1 py-1 px-3">Upcoming</a> </div>
-						<div class="col-2">
+								class="navlinks text-center mx-auto py-1 px-3 my-2">Upcoming</a>
+						
 							<a href="EventsCompleted.jsp"
-								class="navlinks text-center mx-1 py-1 px-3">Completed</a>
+								class="navlinks text-center mx-auto py-1 px-3 my-2">Completed</a>
 						</div>
 					</div>
 					<br>
@@ -162,19 +158,21 @@
 						<script>
 								
 							var innerDiv = document.createElement('div');
-							innerDiv.classList.add("cont","shadow","col","py-2","my-2","pt-3","pl-4");
+							innerDiv.classList.add("cont","shadow","col-lg-3","col-md-10","py-2","my-2","pt-3","mr-3","pl-4");
 							innerDiv.style.backgroundColor = "<%=color[i]%>";
 							innerDiv.id = "grad1"
 													
 							document.getElementById("events").appendChild(innerDiv);
 							
 							innerDiv.innerHTML = 
-								'<h4 style="margin-bottom:-1%;"><%=rs.getString("eName")%></h1><br><br>'
-								+'<p class=""><i style="padding-right: 4%;" class="far fa-calendar-alt"></i><%=day%>&nbsp;<%=monthName%>&nbsp;<%=year%></P><br>'
-								+'<p class=""><i style="padding-right: 4%;" class="fas fa-map-marker-alt"></i><%=rs.getString("eVenue")%></p><br>'
+								'<h4 style="margin-bottom:-1%;"><%=rs.getString("eName")%></h1><br>'
+								+'<p><i style="padding-right: 4%;" class="far fa-calendar-alt"></i><%=day%>&nbsp;<%=monthName%>&nbsp;<%=year%></P>'
+								+'<p><i style="padding-right: 4%;" class="fas fa-map-marker-alt"></i><%=rs.getString("eVenue")%></p>'
 								+''
 								+''
 								+'';
+								
+								
 						</script>
 
 						<% i += 1; } %>
@@ -293,7 +291,7 @@
 					<div class="row" style="height: 100%;">
 						<div style="padding-top: 15%;"
 							class="col-12 no-gutters align-self-end">
-							<img src="Pix/sss.png"
+							<img src="Pix/al.png"
 								style="height: 100%; width: 100%; background-size: cover;">
 						</div>
 					</div>
@@ -309,57 +307,6 @@
 		}
 	%>
 
-	<!-- Footer -->
-	<footer class="page-footer font-small unique-color-dark"
-		style="background-color: #0d022b; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-		<div class="shadow" style="background-color: #ffae3c;">
-			<div class="container">
-				<div class="row py-3 d-flex align-items-center">
-					<div
-						class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-						<h6 class="mb-0">Get Connected with Us on Social Networks!</h6>
-					</div>
-					<div class="col-md-6 col-lg-7 text-center text-md-right medias">
-						<!-- Facebook -->
-						<a href="https://www.facebook.com/SLtelecom" class="fb-ic"
-							target="_blank"> <i
-							class="fab fa-facebook-square white-text mr-3 fa-2x"> </i>
-						</a>
-						<!-- Twitter -->
-						<a href="https://twitter.com/SriLankaTelecom" class="tw-ic"
-							target="_blank"> <i
-							class="fab fa-twitter-square white-text mr-3 fa-2x"> </i>
-						</a>
-						<!-- Google +-->
-						<a href="https://plus.google.com/+srilankatelecom"
-							class="gplus-ic" target="_blank"> <i
-							class="fab fa-google-plus-square white-text mr-3 fa-2x"></i>
-						</a>
-						<!--Linkedin -->
-						<a href="https://www.linkedin.com/company/sri-lanka-telecom"
-							class="li-ic" target="_blank"> <i
-							class="fab fa-linkedin white-text mr-3 fa-2x"> </i>
-						</a>
-						<!--Youtube-->
-						<a href="https://www.youtube.com/user/srilankatelecom"
-							class="yt-ic" target="_blank"> <i
-							class="fab fa-youtube-square white-text fa-2x"> </i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-0.5"
-			style="color: #eee; background-color: #0d022b; font-size: small;">
-			<a href="index.html" style="color: #eee; text-decoration: none;">
-				<img src="Pix/favicon.png" width="80px" height="80px" alt="Logo">
-			</a><br> <br>Copyright &copy; 2020 &nbsp;-&nbsp; Sri Lanka
-			Telecom PLC &nbsp; All rights reserved. <br> <br> <br>
-		</div>
-	</footer>
 </body>
 
 </html>

@@ -190,17 +190,17 @@ a i {
 @media ( max-width :800px) {
 	.sidebar {
 		overflow-x: hidden;
-		overflow-y: hidden;
+		overflow-y: auto;
     	width: 10%;
 	}
 	
 	.sidebar a {
 		font-size: 0px !important;
-		padding: 40% 0px 0% 10%;
+		padding: 30% 0px 0% 10%;
 	}
 	.sidebar a i {
 		font-size: 17px !important;
-		padding: 20% 0px 15% 10%;
+		padding: 10% 0px 15% 10%;
 	}
 	.sidebar img{
 		margin-top:50%;

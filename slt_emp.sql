@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 16, 2020 at 04:00 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Generation Time: Aug 13, 2020 at 07:55 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.2.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -40,6 +39,16 @@ CREATE TABLE `sltemp_event` (
   `endTime` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `sltemp_event`
+--
+
+INSERT INTO `sltemp_event` (`eid`, `eName`, `eType`, `eDesc`, `eVenue`, `capacity`, `eDate`, `startTime`, `endTime`) VALUES
+(1, 'Slt GO', 'Innovation', 'qwertyqwertyqwertyqwertyqwerty', 'BMICH', 500, '2020-06-01', '10.00', '16.00'),
+(2, 'Zero 1', 'Award Ceremony', 'qwertyqwertyqwertyqwertyqwerty', 'Shangri La', 1000, '2020-10-01', '10.00', '22.00'),
+(3, 'Manudam', 'Charity', 'qwertyqwertyqwertyqwertyqwerty', 'Auditorium', 200, '2020-08-09', '10.00', '15.00'),
+(5, 'Mobi Go', 'Launching Event', 'kldfnhkajenhakjenhkaen', 'BMICH', 500, '2020-09-01', '8.00', '16.00');
+
 -- --------------------------------------------------------
 
 --
@@ -70,6 +79,15 @@ CREATE TABLE `sltemp_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `sltemp_user`
+--
+
+INSERT INTO `sltemp_user` (`uid`, `fname`, `lname`, `username`, `password`, `email`, `nic`, `mobile`, `userType`) VALUES
+(1, 'Mihiri', 'Sam', 'null', 'null', 'mihisam@gmail.com', '988856742V', 999854700, 'invitee'),
+(2, 'Nimz', 'Jay', 'nimzjay', '123123', 'nimzjay@gmail.com', '988875698V', 123456789, 'invitee'),
+(3, 'admin', 'admin', 'admin', '123123', 'admin@sltemp.com', '988856749V', 598789456, 'admin');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -93,13 +111,13 @@ ALTER TABLE `sltemp_user`
 -- AUTO_INCREMENT for table `sltemp_event`
 --
 ALTER TABLE `sltemp_event`
-  MODIFY `eid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `eid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `sltemp_user`
 --
 ALTER TABLE `sltemp_user`
-  MODIFY `uid` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `uid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

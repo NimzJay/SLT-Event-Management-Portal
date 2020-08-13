@@ -53,7 +53,7 @@ public class Login extends HttpServlet {
 				{
 					String typeDB = rs.getString("userType");
 					
-					if(user.equals(rs.getString("username"))&& pass.equals(rs.getString("password"))&& typeDB.equals("member")) {
+					if(user.equals(rs.getString("username"))&& pass.equals(rs.getString("password"))&& typeDB.equals("invitee")) {
 						return "clientUI";
 					}
 					if(user.equals(rs.getString("username"))&& pass.equals(rs.getString("password"))&& typeDB.equals("admin")) {
@@ -87,15 +87,15 @@ public class Login extends HttpServlet {
         	String userValidate = dao.check(user,pass);
         	if(userValidate.equals("clientUI")) 
         	{        		
-        		System.out.println("Member");
+        		System.out.println("Invitee");
         		Session.setUser(user);
         		System.out.println(Session.getUser());
-        		request.getRequestDispatcher("EventsUpcoming.jsp").forward(request, response);   		           
+        		request.getRequestDispatcher("index.html").forward(request, response);   		           
            	}
         	else if(userValidate.equals("adminUI"))
         	{
         		System.out.println("Admin");
-        		request.getRequestDispatcher("index.html").forward(request, response);
+        		request.getRequestDispatcher("InviteeAdd.jsp").forward(request, response);
         	}
         	else 
         	{

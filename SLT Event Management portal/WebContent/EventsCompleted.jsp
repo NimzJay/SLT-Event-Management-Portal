@@ -47,7 +47,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #0d022b;">
 	<%
 		try {
 		
@@ -99,10 +99,6 @@
 						style="padding-right: 14%;" class="far fa-calendar-check"></i>Events</a>
 				</div>
 				<div>
-					<a href="Calendar.jsp" title="Calendar"><i
-						style="padding-right: 14%;" class="far fa-calendar-alt"></i>Calendar</a>
-				</div>
-				<div>
 					<a href="#gallery" title="Gallery"><i
 						style="padding-right: 14%;" class="fas fa-images"></i>Gallery</a>
 				</div>
@@ -135,16 +131,16 @@
 				<div class="px-5 ">
 					<h2 class="mb-3" style="font-family: Calibri Light;">Completed
 						Events</h2><br>
-					<div class="row">
-						<div class="col-1">
+					<div class="row no-gutters">
+						<div class="col-12">
 							<a href="EventsAll.jsp"
-								class="navlinks text-center mr-5 py-1 px-3">All</a> </div>
-						<div class="col-2">
+								class="navlinks text-center mx-auto py-1 px-3 my-2">All</a> 
+						
 							<a href="EventsUpcoming.jsp"
-								class="navlinks text-center mx-1 py-1 px-3">Upcoming</a> </div>
-						<div class="col-2">
+								class="navlinks text-center mx-auto py-1 px-3 my-2">Upcoming</a>
+						
 							<a href="EventsCompleted.jsp"
-								class="navlinks active text-center mx-1 py-1 px-3">Completed</a>
+								class="navlinks active text-center mx-auto py-1 px-3 my-2">Completed</a>
 						</div>
 					</div>
 					<br>
@@ -163,7 +159,7 @@
 						<script>
 								
 							var innerDiv = document.createElement('div');
-							innerDiv.classList.add("cont","shadow","col","py-2","my-2","pt-3","pl-4");
+							innerDiv.classList.add("cont","shadow","col-lg-3","col-md-10","py-2","my-2","pt-3","mr-3","pl-4");
 							innerDiv.style.backgroundColor = "<%=color[i]%>";
 							innerDiv.id = "grad1"
 													
